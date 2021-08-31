@@ -10,4 +10,4 @@ yarn.lock linguist-generated
 vendor/* linguist-vendored
 
 # Disable auto crlf on windows
-*text=false
+*text=auto eol=lf
