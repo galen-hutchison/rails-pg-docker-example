@@ -26,8 +26,8 @@ RUN gem install rails -v '6.1.4'
 # navigate to app directory
 WORKDIR $APP_PATH
 
-COPY Gemfile /myapp/Gemfile
-COPY Gemfile.lock /myapp/Gemfile.lock
+COPY Gemfile Gemfile
+COPY Gemfile.lock Gemfile.lock
 RUN bundle install
 
 # Add a script to be executed every time the container starts.
